@@ -1,3 +1,17 @@
-import EUID from "./lib/EUID.js"
+import { createElement as h } from "./lib/EUID.js";
 
-console.log(EUID);
+const appElement = h(
+    'div', 
+    {
+        id: 'app'
+    }, 
+    h(
+        'h1', 
+        {}, 
+        '안녕!', 
+        h('br'), 
+        '리액트.'
+    )
+);
+
+console.log(appElement);

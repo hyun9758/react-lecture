@@ -1,24 +1,37 @@
-// createElement 함수
-// DOM 노드 : HTMLElement 반환
-function createElement(type, props, ...children) {
-    // type - DOM 요소 노드 생성
-    const element = document.createElement(type);
-    // props - 생성한 DOM 요소 노드에 속성 설정
-    // ...children - 생성한 DOM 요소 노드의 자식으로 구성
-    // 생성한 DOM 요소 노드 반환
-    return element;
-}
+import { createElement as h, createRoot } from "./lib/EUID.js";
 
-// createRoot 함수
-// 객체 : { render, unmount }
-function createRoot(domNode /* container */) {
+const appElement = h(
+    'div', 
+    {
+        id: 'app',
+        'data-type': 'application'
+    }, 
+    h(
+        'h1', 
+        {}, 
+        '안녕!', 
+        h('br'), 
+        '리액트.'
+    ),
+    h(
+        'p',
+        { 'data-id': 'slogan' },
+        '리액트는....'
+    ),
+);
 
-}
 
-// EUID 객체의 멤버로 내보내기
-const EUID = Object.freeze({
-    createElement,
+const root = createRoot(document.getElementById('root')); // { render, unmount }
+
+// root === undefined
+// ERROR: Cannot read properties of undefined (reading 'render')
+root.render(appElement);
+
+
+// 버튼 요소 클릭 이벤트 핸들링
+// BEM 표기법
+const getOutButton = document.querySelector('.getOutReact__button');
+
+getOutButton.addEventListener('click', () => {
+    root.unmount();
 });
-
-// 모듈 기본 내보내기
-export default EUID;
