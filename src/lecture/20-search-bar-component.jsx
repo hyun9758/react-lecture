@@ -15,12 +15,7 @@ function App() {
   return (
     <div id="app">
       {/* 인스턴스, 엘리먼트, 객체 */}
-      <SearchBar
-        totalPrice={32000}
-        student="김용범"
-        violinist="김다영"
-        isPureComponent={false}
-      />
+      <SearchBar />
     </div>
   );
 }
