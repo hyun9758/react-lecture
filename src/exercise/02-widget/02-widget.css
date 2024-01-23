@@ -1,0 +1,43 @@
+:root {
+    /* Color styles */
+    --white: #ffffff;
+    --gray--100: #bcc3c7;
+    --gray--500: #6d7478;
+    --gray--950: #040404;
+    --green--100: #03cc5c;
+    --blue--100: #01a9ff;
+    --blue--200: #4284f7;
+  
+    /* effect styles */
+    --shadow--100: 0px 4px 4px rgba(68, 131, 63, 0.15);
+  }
+
+  .stockNumber {
+    color: var(--gray-950, #040404);
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 20px */
+    letter-spacing: -0.4px;
+  }
+
+  .stockName {
+    color: var(--gray-500, #6D7478);
+    font-family: Pretendard;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 12px */
+    letter-spacing: 0.12px;
+  }
+
+  .stockArrow {
+    color: var(--blue-200, #4284F7);
+    font-family: Pretendard;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 12px */
+    letter-spacing: 0.12px;
+  }
