@@ -1,5 +1,5 @@
 import './App.css';
-import Exercise from '../lecture/26-render-list-avatar-selection';
+import Exercise from '../lecture/29-a11y-hidden-component-v2';
 
 function App() {
   return (
