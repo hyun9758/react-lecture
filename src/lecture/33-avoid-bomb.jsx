@@ -24,7 +24,7 @@ function Exercise() {
 
   // 식
   const gameClassNames = `${classes.game} ${
-    !isPlaying ? classes.stop : ''
+    !isPlaying ? classes.stop : '' // isPlaying이 true면 멈추기, false면 아무 동작 없음
   }`.trim();
 
   // 문
