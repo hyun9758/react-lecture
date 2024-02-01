@@ -52,7 +52,7 @@ function AccordionPanel({
   ...restProps
 }) {
   return (
-    <div className={classes.AccordionPanel} {...restProps}>
+    <div className={classes.AccordionPanel} {...restProps}> 
       <button type="button" onClick={() => onToggle(index)}>
         {isOpen ? '닫음' : '열림'}
       </button>
