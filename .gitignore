@@ -6,3 +6,5 @@ node_modules
 NOTICE.md
 template.md
 dist
+.env
+pocketbase
